@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #9356dc;
+    /* var(--primary-color) */
+    --second-color: #ff79da;
+    /* var(--second-color) */
+    --tertiaire-color: #99e2d0;
+    /* var(--tertiaire-color) */
+}
+.container{
+    padding-left: 20px;
+}
+.logo ,.location{
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    height: 50px;
+    margin: 30px 0;
+}
+.location{
+    background-color: #EAEAEA;
+}
+.color_button button{
+    background-color: var(--primary-color);
+}
+.filterbutton{
+    display: flex;
+    justify-content: center;
+}
+.filterbutton button{
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    height: 50px;
+    width: 218px;
+}
+.filter_function button{
+    border-radius: 20px;
+    border-color: transparent;
+    height: 72px;
+    width: 335px;
+}
+ul {
+   padding: 0px;
+}
+/* Card */
+.Card_Restaurants{
+    padding: 0 18px 0 17px;
+}
+.Card img{
+    height: 231px;
+    width: 346px;
+}
+footer{
+    background-color: #353535;
+    color: white;
+}
