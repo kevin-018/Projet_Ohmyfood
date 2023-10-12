@@ -4,77 +4,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    
     <title>ohmyfood</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <img src="assets/images/logo/ohmyfood.png" alt="Logo_ohmyfood">
+            <div class="image">
+                <img class= "header__image__size" src="assets/images/logo/ohmyfood.png" alt="Logo_ohmyfood">
             </div>
-            <li class="location">
+            <div class="header__location">
                 <i class="fa-solid fa-location-dot"></i>
-                <h1>Paris, Belleville</h1>
-            </li>
+                Paris, Belleville
+            </div>
         </header>
         <section>
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurant d'exception, sélectionnés par nos soins.</p>
         </section>
-            <li class="filterbutton color_button">    
-                <button>Explorer nos restaurant</button>
-            </li>
-        <div class="function">
-            <h2>Fonctionnement</h2>
-            <ul class="filter_function">
-                <button>Choisissez un restaurant</button>
-            </ul>
-            <ul class="filter_function">
-                <button>Composez votre menu</button>
-            </ul>
-            <ul class="filter_function">
-                <button>Dégustez au restaurant</button>
-            </ul>
+            <div class="button__filter">    
+                <button class="button button__purple button__rond">Explorer nos restaurant</button>
+            </div>
+            <h2 class="function">Fonctionnement</h2>
+            <div class="filter_function">
+                <button class="button__rond button__size">Choisissez un restaurant</button>
+            </div>
+            <div class="filter_function">
+                <button class="button__rond button__size">Composez votre menu</button>
+            </div>
+            <div class="filter_function">
+                <button class="button__rond button__size">Dégustez au restaurant</button>
+            </div>
+            <h2>Restaurants</h2>
+        <div class="Card_Restaurants">
+            <div class="Card">
+                <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La_palette_du_goût">
+                <h2>La palette du goût</h2>
+                <p>Ménilmontant</p>
+            </div>    
+            <div class="Card">
+                <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image_2">
+                <h2>La note enchantée</h2>
+                <p>Charonne</p>
+            </div>
+            <div class="Card">
+                <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image_3">
+                <h2>A la française</h2>
+                <p>Cité Rouge</p>
+            </div>
+            <div class="Card">
+                <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image_4">
+                <h2>Le délice des sens</h2>
+                <p>Folie-Méricourt</p>
+            </div>
         </div>
-    </div>
-        <h2>Restaurants</h2>
-    <div class="Card_Restaurants">
-        <div class="Card">
-            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La_palette_du_goût">
-            <h2>La palette du goût</h2>
-            <p>Ménilmontant</p>
-        </div>
-        <div class="Card">
-            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image_2">
-            <h2>La note enchantée</h2>
-            <p>Charonne</p>
-        </div>
-        <div class="Card">
-            <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image_3">
-            <h2>A la française</h2>
-            <p>Cité Rouge</p>
-        </div>
-        <div class="Card">
-            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image_4">
-            <h2>Le délice des sens</h2>
-            <p>Folie-Méricourt</p>
-        </div>
-    </div>
-    <footer>
-        <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo">
-        <p>Proposer un restaurant</p>
-        <p>Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
-    </footer>
+        <footer>
+            <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo">
+            <p>Proposer un restaurant</p>
+            <p>Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p>Contact</p>
+        </footer>
+    </div>    
 </body>
