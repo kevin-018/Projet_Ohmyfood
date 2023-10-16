@@ -20,6 +20,13 @@ header{
     font-family: Roboto;
     size: 30px;
 }
+.test{
+    display: flex;
+    margin: 0px 56px;
+}
+.title{
+    background-color: whitesmoke
+}
 .image{
     display: flex;
     justify-content: center;
@@ -33,10 +40,17 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
-    height: 50px;
+    height: 50px;  
     
 }
-
+.header__location i{
+    margin-right: 17px;
+}
+.filter__function{
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+}
 /* fonction*/
 .button{
     height: 50px;
@@ -45,6 +59,8 @@ header{
 .button__filter{
     display: flex;
     justify-content: center;
+    padding-bottom: 57px;
+    padding-top: 22px;
 }
 .button__purple{
     background-color: var(--primary-color);
@@ -74,4 +90,7 @@ header{
 footer{
     background-color: #353535;
     color: white;
+}
+.footer__function{
+    margin-left: 20px;
 }
