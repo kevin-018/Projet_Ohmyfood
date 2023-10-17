@@ -24,7 +24,7 @@ header{
     display: flex;
     margin: 0px 56px;
 }
-.title{
+.title__color{
     background-color: whitesmoke
 }
 .image{
@@ -78,6 +78,10 @@ header{
     height: 72px;
     top: 505px;
 }
+.button__white{
+    background-color: white;
+}
+
 /* Card */
 .Card_Restaurants{
     padding: 0 18px 0 17px;
@@ -94,3 +98,11 @@ footer{
 .footer__function{
     margin-left: 20px;
 }
+
+
+.title__photo{
+    width: 375px;
+    height: 275px;
+}
+
+
