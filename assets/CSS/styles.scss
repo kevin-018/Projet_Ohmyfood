@@ -15,7 +15,7 @@
 body {
     margin: 0px;
 }
-/* header */
+// header //
 header {
     font-family: Roboto;
     size: 30px;
@@ -25,21 +25,21 @@ header {
         .header__image__size {
             height: 36px;
             margin: 30px 0;
-            .header__location {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #EAEAEA;
-                height: 50px;      
-                .header__location i{
-                    margin-right: 17px;
-                }
-            }
+        }
+    }
+    .header__location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EAEAEA;
+        height: 50px;      
+        i {
+            margin-right: 17px;
         }
     }
 }
-.test {
-    display: flex;
+    .test {
+        display: flex;
     margin: 0px 56px;
 }
 .title__color {
@@ -50,43 +50,51 @@ header {
     display: flex;
     justify-content: center;
     margin: 24px;
-    .function{
-        padding-left: 20px;
+}
+.function{
+    padding-left: 20px;
+}
+.number{
+    
+}
+
+.button__filter{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 57px;
+    padding-top: 22px;
+    .button{
+        height: 50px;
+        width: 218px;
+    }
+    .button__purple{
+        background-color: var(--primary-color);
+        color: white;
     }
 }
-.button{
-    height: 50px;
-    width: 218px;
-    .button__filter{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 57px;
-        padding-top: 22px;
-        .button__purple{
-            background-color: var(--primary-color);
-            color: white;
-            .button__rond{
-                border-color: transparent;
-                border-radius: 20px;
-                .button__size{
-                    width: 335px;
-                    height: 72px;
-                    top: 505px;
-                    .button__white{
-                        background-color: white;
-                    }
-                }
-            }
-        }
-    }
+.button__rond{
+    border-color: transparent;
+    border-radius: 20px;
+}
+.button__size{
+    width: 335px;
+    height: 72px;
+    top: 505px;
+}
+.button__white{
+    background-color: white;
 }
 /* Card */
-.Card_Restaurants{
+.Card__Restaurants{
     padding: 0 18px 0 17px;
+    .Card img{
+        height: 231px;
+        width: 346px;
+    }
 }
-.Card img{
-    height: 231px;
-    width: 346px;
+.title__photo{
+    width: 375px;
+    height: 275px;
 }
 /* footer */
 footer{
@@ -95,8 +103,4 @@ footer{
     .footer__function{
         margin-left: 20px;
     }
-}
-.title__photo{
-    width: 375px;
-    height: 275px;
 }

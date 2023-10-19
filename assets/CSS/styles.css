@@ -18,7 +18,6 @@ body {
   margin: 0px;
 }
 
-/* header */
 header {
   font-family: Roboto;
   size: 30px;
@@ -31,14 +30,14 @@ header .image .header__image__size {
   height: 36px;
   margin: 30px 0;
 }
-header .image .header__image__size .header__location {
+header .header__location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
   height: 50px;
 }
-header .image .header__image__size .header__location .header__location i {
+header .header__location i {
   margin-right: 17px;
 }
 
@@ -57,45 +56,53 @@ header .image .header__image__size .header__location .header__location i {
   justify-content: center;
   margin: 24px;
 }
-.filter__function .function {
+
+.function {
   padding-left: 20px;
 }
 
-.button {
-  height: 50px;
-  width: 218px;
-}
-.button .button__filter {
+.button__filter {
   display: flex;
   justify-content: center;
   padding-bottom: 57px;
   padding-top: 22px;
 }
-.button .button__filter .button__purple {
+.button__filter .button {
+  height: 50px;
+  width: 218px;
+}
+.button__filter .button__purple {
   background-color: var(--primary-color);
   color: white;
 }
-.button .button__filter .button__purple .button__rond {
+
+.button__rond {
   border-color: transparent;
   border-radius: 20px;
 }
-.button .button__filter .button__purple .button__rond .button__size {
+
+.button__size {
   width: 335px;
   height: 72px;
   top: 505px;
 }
-.button .button__filter .button__purple .button__rond .button__size .button__white {
+
+.button__white {
   background-color: white;
 }
 
 /* Card */
-.Card_Restaurants {
+.Card__Restaurants {
   padding: 0 18px 0 17px;
 }
-
-.Card img {
+.Card__Restaurants .Card img {
   height: 231px;
   width: 346px;
+}
+
+.title__photo {
+  width: 375px;
+  height: 275px;
 }
 
 /* footer */
@@ -105,9 +112,4 @@ footer {
 }
 footer .footer__function {
   margin-left: 20px;
-}
-
-.title__photo {
-  width: 375px;
-  height: 275px;
 }/*# sourceMappingURL=styles.css.map */
