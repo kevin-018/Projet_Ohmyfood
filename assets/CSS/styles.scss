@@ -1,106 +1,138 @@
 :root {
-    --primary-color: #9356dc;
-    /* var(--primary-color) */
-    --second-color: #ff79da;
-    /* var(--second-color) */
-    --tertiaire-color: #99e2d0;
-    /* var(--tertiaire-color) */
+  --primary-color: #9356dc;
+  /* var(--primary-color) */
+  --second-color: #ff79da;
+  /* var(--second-color) */
+  --tertiaire-color: #99e2d0;
+  /* var(--tertiaire-color) */
 }
 .container {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* body */
 body {
-    margin: 0px;
+  margin: 0px;
 }
 // header //
 header {
-    font-family: Roboto;
-    size: 30px;
-    .image {
-        display: flex;
-        justify-content: center; 
-        .header__image__size {
-            height: 36px;
-            margin: 30px 0;
-        }
+  font-family: Roboto;
+  size: 30px;
+  .image {
+    display: flex;
+    justify-content: center;
+    .header__image__size {
+      height: 36px;
+      margin: 30px 0;
     }
-    .header__location {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #EAEAEA;
-        height: 50px;      
-        i {
-            margin-right: 17px;
-        }
+  }
+  .header__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 50px;
+    i {
+      margin-right: 17px;
     }
+  }
 }
-    .test {
-        display: flex;
-    margin: 0px 56px;
+.test {
+  display: flex;
+  margin: 0px 56px;
 }
 .title__color {
-    background-color: whitesmoke
+  background-color: whitesmoke;
 }
 /* fonction*/
-.filter__function{
-    display: flex;
-    justify-content: center;
-    margin: 24px;
+.filter__function {
+  display: flex;
+  justify-content: center;
+  margin: 24px;
 }
-.function{
-    padding-left: 20px;
+.function {
+  padding-left: 20px;
 }
-.number{
-    
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  margin: 30px 20px;
+  position: absolute;
+  color: white;
 }
 
-.button__filter{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 57px;
-    padding-top: 22px;
-    .button{
-        height: 50px;
-        width: 218px;
-    }
-    .button__purple{
-        background-color: var(--primary-color);
-        color: white;
-    }
+.button__filter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 57px;
+  padding-top: 22px;
+  .button {
+    height: 50px;
+    width: 218px;
+  }
+  .button__gradient {
+    color: white;
+    border-width: 0;
+    background: linear-gradient(
+      to right bottom,
+      var(--second-color),
+      var(--primary-color)
+    );
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
 }
-.button__rond{
-    border-color: transparent;
-    border-radius: 20px;
+.button__rond {
+  border-color: transparent;
+  border-radius: 20px;
 }
-.button__size{
-    width: 335px;
-    height: 72px;
-    top: 505px;
+.button__size {
+  width: 335px;
+  height: 72px;
+  top: 505px;
 }
-.button__white{
-    background-color: white;
+.button__white {
+  background-color: white;
 }
 /* Card */
-.Card__Restaurants{
-    padding: 0 18px 0 17px;
-    .Card img{
-        height: 231px;
-        width: 346px;
+.Card__Restaurants {
+  padding: 0 18px 0 17px;
+  .Card img {
+    position: relative;
+    height: 231px;
+    width: 346px;
+    border-radius: 15px;
+    .Card__text__over {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin: 13px 12px 209px 248px;
+      width: 80px;
+      height: 29px;
+      border-radius: 2px;
+      background: var(--tertiaire-color);
+      .Card i {
+        margin-left: 200px;
+      }
     }
+  }
 }
-.title__photo{
-    width: 375px;
-    height: 275px;
+.title__photo {
+  width: 375px;
+  height: 275px;
 }
 /* footer */
-footer{
-    background-color: #353535;
-    color: white;
-    .footer__function{
-        margin-left: 20px;
-    }
+footer {
+  background-color: #353535;
+  color: white;
+  .footer__function {
+    margin-left: 20px;
+    padding-bottom: 1%;
+  }
 }

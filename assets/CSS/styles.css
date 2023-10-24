@@ -34,7 +34,7 @@ header .header__location {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 50px;
 }
 header .header__location i {
@@ -61,6 +61,19 @@ header .header__location i {
   padding-left: 20px;
 }
 
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  margin: 30px 20px;
+  position: absolute;
+  color: white;
+}
+
 .button__filter {
   display: flex;
   justify-content: center;
@@ -71,9 +84,11 @@ header .header__location i {
   height: 50px;
   width: 218px;
 }
-.button__filter .button__purple {
-  background-color: var(--primary-color);
+.button__filter .button__gradient {
   color: white;
+  border-width: 0;
+  background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button__rond {
@@ -96,8 +111,24 @@ header .header__location i {
   padding: 0 18px 0 17px;
 }
 .Card__Restaurants .Card img {
+  position: relative;
   height: 231px;
   width: 346px;
+  border-radius: 15px;
+}
+.Card__Restaurants .Card img .Card__text__over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 13px 12px 209px 248px;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background: var(--tertiaire-color);
+}
+.Card__Restaurants .Card img .Card__text__over .Card i {
+  margin-left: 200px;
 }
 
 .title__photo {
@@ -112,4 +143,5 @@ footer {
 }
 footer .footer__function {
   margin-left: 20px;
+  padding-bottom: 1%;
 }/*# sourceMappingURL=styles.css.map */
