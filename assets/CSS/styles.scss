@@ -21,11 +21,11 @@ header {
   size: 30px;
   .image {
     display: flex;
-    justify-content: center;
     .header__image__size {
       height: 36px;
       margin: 30px 0;
     }
+    justify-content: center;
   }
   .header__location {
     display: flex;
@@ -123,9 +123,12 @@ header {
     }
   }
 }
-.title__photo {
+.title__photo img {
   width: 375px;
   height: 275px;
+}
+.background__all{
+  background-color: paleturquoise;
 }
 /* footer */
 footer {

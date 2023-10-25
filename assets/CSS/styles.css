@@ -131,9 +131,13 @@ header .header__location i {
   margin-left: 200px;
 }
 
-.title__photo {
+.title__photo img {
   width: 375px;
   height: 275px;
+}
+
+.background__all {
+  background-color: paleturquoise;
 }
 
 /* footer */
