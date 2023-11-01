@@ -8,9 +8,12 @@
 }
 
 .container {
-  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  font-style: normal;
+  font-family: Roboto;
+  line-height: normal;
+  background-color: whitesmoke;
 }
 
 /* body */
@@ -30,6 +33,12 @@ header .image .header__image__size {
   height: 36px;
   margin: 30px 0;
 }
+header .image i {
+  position: relative;
+  right: 50px;
+  top: 30px;
+  font-size: 30px;
+}
 header .header__location {
   display: flex;
   justify-content: center;
@@ -41,37 +50,33 @@ header .header__location i {
   margin-right: 17px;
 }
 
-.test {
-  display: flex;
-  margin: 0px 56px;
-}
-
 .title__color {
   background-color: whitesmoke;
+  padding: 10px;
+}
+.title__color h2 {
+  display: flex;
+  margin: 0px 58px 0px 42px;
+  width: 275px;
+  height: 68px;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+.title__color p {
+  width: 315px;
+  margin: 0px 26px 0px 34px;
+  height: 46px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: gray;
 }
 
 /* fonction*/
-.filter__function {
-  display: flex;
-  justify-content: center;
-  margin: 24px;
-}
-
 .function {
-  padding-left: 20px;
-}
-
-.number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background-color: var(--primary-color);
-  margin: 30px 20px;
-  position: absolute;
-  color: white;
+  padding: 48px 0px 2px 20px;
+  margin: 0px;
 }
 
 .button__filter {
@@ -85,10 +90,14 @@ header .header__location i {
   width: 218px;
 }
 .button__filter .button__gradient {
-  color: white;
   border-width: 0;
   background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.button__filter a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .button__rond {
@@ -106,29 +115,77 @@ header .header__location i {
   background-color: white;
 }
 
+.filter__function {
+  display: flex;
+  margin: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.filter__function i {
+  padding-inline: 0px 35px;
+}
+.filter__function p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.filter__function .number {
+  border-radius: 90px;
+  width: 24px;
+  height: 24px;
+}
+.filter__function .number__position {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 10px;
+  margin-block: auto;
+}
+.filter__function .number__color {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 /* Card */
 .Card__Restaurants {
   padding: 0 18px 0 17px;
+  margin: 0;
+  background-color: whitesmoke;
+}
+.Card__Restaurants .Card {
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px 0;
 }
 .Card__Restaurants .Card img {
-  position: relative;
-  height: 231px;
-  width: 346px;
-  border-radius: 15px;
+  height: 251px;
+  width: 340px;
+  border-radius: 15px 15px 0 0;
 }
-.Card__Restaurants .Card img .Card__text__over {
+.Card__Restaurants .Card__text {
+  padding: 0 0 12px 13px;
+}
+.Card__Restaurants .Card__text i {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  left: 293px;
+  bottom: 50px;
+  width: 22px;
+  font-size: 22px;
+}
+.Card__Restaurants .Card__text__over {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  margin: 13px 12px 209px 248px;
+  position: relative;
+  left: 250px;
+  top: 60px;
   width: 80px;
   height: 29px;
   border-radius: 2px;
   background: var(--tertiaire-color);
-}
-.Card__Restaurants .Card img .Card__text__over .Card i {
-  margin-left: 200px;
 }
 
 .title__photo img {
@@ -136,10 +193,7 @@ header .header__location i {
   height: 275px;
 }
 
-.background__all {
-  background-color: paleturquoise;
-}
-
+/* page restaurant*/
 /* footer */
 footer {
   background-color: #353535;
@@ -148,4 +202,21 @@ footer {
 footer .footer__function {
   margin-left: 20px;
   padding-bottom: 1%;
+}
+footer h1 {
+  padding-top: 21px;
+  font-size: 18px;
+  font-family: Shrikhand;
+  font-style: normal;
+  font-weight: 400;
+}
+footer p {
+  font-size: 16px;
+  padding-bottom: 7px;
+  margin: 0;
+}
+footer i {
+  margin-right: 11px;
+  width: 11px;
+  height: 13px;
 }/*# sourceMappingURL=styles.css.map */
