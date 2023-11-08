@@ -8,6 +8,8 @@
 }
 
 .container {
+  max-width: 375px;
+  padding-left: 17px;
   margin-left: auto;
   margin-right: auto;
   font-style: normal;
@@ -22,6 +24,7 @@ body {
 }
 
 header {
+  height: 30px;
   font-family: Roboto;
   size: 30px;
 }
@@ -31,7 +34,7 @@ header .image {
 }
 header .image .header__image__size {
   height: 36px;
-  margin: 30px 0;
+  margin: 20px 0 10px 0;
 }
 header .image i {
   position: relative;
@@ -45,14 +48,15 @@ header .header__location {
   align-items: center;
   background-color: #eaeaea;
   height: 50px;
+  position: relative;
 }
 header .header__location i {
   margin-right: 17px;
 }
 
 .title__color {
+  margin-top: 0;
   background-color: whitesmoke;
-  padding: 10px;
 }
 .title__color h2 {
   display: flex;
@@ -62,6 +66,7 @@ header .header__location i {
   font-size: 24px;
   text-align: center;
   color: #000;
+  padding-top: 100px;
 }
 .title__color p {
   width: 315px;
@@ -106,7 +111,7 @@ header .header__location i {
 }
 
 .button__size {
-  width: 335px;
+  width: 350px;
   height: 72px;
   top: 505px;
 }
@@ -158,10 +163,12 @@ header .header__location i {
 .Card__Restaurants .Card {
   background-color: white;
   border-radius: 15px;
-  margin: 20px 0;
+  height: 300px;
+  width: 340px;
+  margin: 20px 0 0 0;
 }
 .Card__Restaurants .Card img {
-  height: 251px;
+  height: 200px;
   width: 340px;
   border-radius: 15px 15px 0 0;
 }
@@ -194,6 +201,8 @@ header .header__location i {
 .title__photo img {
   width: 375px;
   height: 275px;
+  position: relative;
+  top: 60px;
 }
 
 /* page restaurant*/
@@ -201,8 +210,37 @@ header .header__location i {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
-  bottom: 60px;
-  padding-left: 10px;
+}
+.container__radius .title__restaurant {
+  padding-top: 32px;
+  font-weight: 400;
+  font-family: Shrikhand;
+  font-size: 28px;
+}
+.container__radius .different__menus {
+  display: grid;
+  grid-gap: 12px;
+}
+.container__radius .different__menus h3 {
+  display: flex;
+  height: 21px;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  margin: 8px 0 2px 8px;
+}
+.container__radius .different__menus h4 {
+  display: flex;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 2px 0 0 8px;
+}
+.container__radius .different__menus p {
+  position: relative;
+  bottom: 30px;
+  left: 140px;
 }
 
 .page {
@@ -219,6 +257,7 @@ footer .footer__function {
   padding-bottom: 1%;
 }
 footer h1 {
+  margin: 0px;
   padding-top: 21px;
   font-size: 18px;
   font-family: Shrikhand;
