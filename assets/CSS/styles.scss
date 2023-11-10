@@ -6,15 +6,14 @@
   --tertiaire-color: #99e2d0;
   /* var(--tertiaire-color) */
 }
-.container {
+.container__function {
   max-width: 375px;
-  padding-left: 17px;
-  margin-left: auto;
+  background-color: white;
+  margin-left: 17px;
   margin-right: auto;
   font-style: normal;
   font-family: Roboto;
   line-height: normal;
-  background-color: whitesmoke;
 }
 /* body */
 body {
@@ -22,7 +21,6 @@ body {
 }
 // header //
 header {
-  height: 30px;
   font-family: Roboto;
   size: 30px;
   .image {
@@ -32,7 +30,7 @@ header {
       height: 36px;
       margin: 20px 0 10px 0;
     }
-    i{
+    i {
       position: relative;
       right: 50px;
       top: 30px;
@@ -52,9 +50,8 @@ header {
   }
 }
 .title__color {
-  margin-top: 0;
-  background-color: whitesmoke;
-  h2{
+  background-color: #f6f6f6;
+  h2 {
     display: flex;
     margin: 0px 58px 0px 42px;
     width: 275px;
@@ -62,9 +59,9 @@ header {
     font-size: 24px;
     text-align: center;
     color: #000;
-    padding-top: 100px;
+    padding-top: 40px;
   }
-  p{
+  p {
     width: 315px;
     margin: 0px 26px 0px 34px;
     height: 46px;
@@ -73,101 +70,102 @@ header {
     text-align: center;
     color: gray;
   }
-}
-/* fonction*/
-.function {
- padding: 48px 0px 2px 20px;
- margin: 0px;
-}
-.button__filter {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 57px;
-  padding-top: 22px;
-  .button {
-    height: 50px;
-    width: 218px;
-  }
-  .button__gradient {
-    border-width: 0;
-    background: linear-gradient(
-      to right bottom,
-      var(--second-color),
-      var(--primary-color)
+  .button__filter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 57px;
+    padding-top: 22px;
+    .button {
+      height: 50px;
+      width: 218px;
+    }
+    .button__gradient {
+      border-width: 0;
+      background: linear-gradient(
+        to right bottom,
+        var(--second-color),
+        var(--primary-color)
       );
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     }
-    a{
+    a {
       color: white;
       font-size: 16px;
       text-decoration: none;
     }
   }
-  .button__rond {
-    border-color: transparent;
-    border-radius: 20px;
+}
+/* fonction*/
+.function {
+  padding: 48px 0px 2px 20px;
+  margin: 0px;
+}
+.button__rond {
+  border-color: transparent;
+  border-radius: 20px;
+}
+.button__size {
+  width: 350px;
+  height: 72px;
+  top: 505px;
+}
+.button__white {
+  background-color: white;
+}
+.filter__function {
+  display: flex;
+  margin: 24px;
+  justify-content: center;
+  align-items: center;
+  i {
+    padding-inline: 0px 35px;
   }
-  .button__size {
-    width: 350px;
-    height: 72px;
-    top: 505px;
+  .purple {
+    color: var(--primary-color);
   }
-  .button__white {
-    background-color: white;
+  p {
+    font-size: 16px;
+    font-weight: 500;
   }
-  .filter__function {
+  .number {
+    border-radius: 90px;
+    width: 24px;
+    height: 24px;
+  }
+  .number__position {
     display: flex;
-    margin: 24px;
-    justify-content: center;
+    position: relative;
     align-items: center;
-    i {
-      padding-inline: 0px 35px  ;
-    }
-    .purple{
-      color: var(--primary-color);
-    }
-    p{
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .number {
-      border-radius: 90px;
-      width: 24px;
-      height: 24px;
-    }
-    .number__position{
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      left: 10px;
-      margin-block: auto;
-    }
-    .number__color{
-      background-color: var(--primary-color);
-      color: white;
-    }
+    justify-content: center;
+    left: 10px;
+    margin-block: auto;
   }
+  .number__color {
+    background-color: var(--primary-color);
+    color: white;
+  }
+}
 /* Card */
 .Card__Restaurants {
-  padding: 0 18px 0 17px;
+  padding: 0 17px;
   margin: 0;
   background-color: whitesmoke;
-  .Card{
+  position: relative;
+  .Card {
     background-color: white;
     border-radius: 15px;
     height: 300px;
     width: 340px;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
   }
-    .Card img {
-      height: 200px;
-      width: 340px;
-      border-radius: 15px 15px 0 0;
+  .Card img {
+    height: 200px;
+    width: 340px;
+    border-radius: 15px 15px 0 0;
   }
-  .Card__text{
+  .Card__text {
     padding: 0 0 12px 13px;
-    i{
+    i {
       display: flex;
       position: relative;
       justify-content: center;
@@ -182,9 +180,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     left: 250px;
-    top: 60px;
     width: 80px;
     height: 29px;
     border-radius: 2px;
@@ -198,48 +195,45 @@ header {
   top: 60px;
 }
 /* page restaurant*/
-.container__radius{
+.container__radius {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
-  .title__restaurant{
+  .title__restaurant {
     padding-top: 32px;
     font-weight: 400;
     font-family: Shrikhand;
     font-size: 28px;
   }
-  .different__menus{
+  .different__menus {
     display: grid;
     grid-gap: 12px;
-    h2{
-
-    }
-    h3{
+    h3 {
       display: flex;
       height: 21px;
       font-size: 18px;
       font-family: Roboto;
       font-weight: 500;
-      margin: 8px 0 2px 8px; 
+      margin: 8px 0 2px 8px;
     }
-    h4{
+    h4 {
       display: flex;
       height: 19px;
       font-family: Roboto;
       font-size: 15px;
       font-weight: 300;
-      margin: 2px 0 0 8px; 
+      margin: 2px 0 0 8px;
     }
-    p{
+    p {
       position: relative;
       bottom: 30px;
       left: 140px;
     }
   }
-  }
-  .page{
-    padding: 0;
-  }
+}
+.page {
+  padding: 0;
+}
 /* footer */
 footer {
   background-color: #353535;
@@ -248,46 +242,45 @@ footer {
     margin-left: 20px;
     padding-bottom: 1%;
   }
-  h1{
+  h1 {
     margin: 0px;
     padding-top: 21px;
-    font-size:  18px;
+    font-size: 18px;
     font-family: Shrikhand;
     font-style: normal;
     font-weight: 400;
   }
-  p{
+  p {
     font-size: 16px;
     padding-bottom: 7px;
     margin: 0;
   }
-  i{
+  i {
     margin-right: 11px;
     width: 11px;
     height: 13px;
   }
 }
-
-@media screen and (min-width: 1280px ){
-  .container{
+@media screen and (min-width: 1280px) {
+  .container {
     min-width: 1440px;
     align-items: center;
-    padding-left: 180px;
+    padding: 0;
   }
   .title__color {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: #f6f6f6;
     padding: 10px;
     gap: 30px;
     align-items: center;
-    h2{
+    h2 {
       width: 645px;
       height: 68px;
       font-size: 40px;
       color: #000;
     }
-    p{
+    p {
       width: 531px;
       margin: 0px 26px 0px 34px;
       height: 46px;
@@ -296,26 +289,26 @@ footer {
       color: gray;
     }
   }
-  .filter__function {
-    display: grid;
-    grid-template-columns: repeat(3,0fr);
-    margin: 24px;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
-    i{
-      padding-inline: 0px 35px  ;
-    }
-    p{
-      font-size: 16px;
-      font-weight: 500;
+  .filter {
+    display: flex;
+    .filter__function {
+      margin: 24px;
+      justify-content: center;
+      align-items: flex-start;
+      i {
+        padding-inline: 0px 35px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
     }
     .number {
       border-radius: 90px;
       width: 24px;
       height: 24px;
     }
-    .number__position{
+    .number__position {
       display: flex;
       position: relative;
       align-items: center;
@@ -323,7 +316,7 @@ footer {
       left: 10px;
       margin-block: auto;
     }
-    .number__color{
+    .number__color {
       background-color: var(--primary-color);
       color: white;
     }
@@ -333,77 +326,85 @@ footer {
   }
   .Card__Restaurants {
     display: grid;
-    grid-template-columns: repeat(2,0fr);
+    grid-template-columns: repeat(2, 0fr);
     grid-gap: 50px 100px;
     background-color: whitesmoke;
-    .Card{
+    .Card {
       width: 500px;
       height: 400px;
       background-color: white;
       border-radius: 15px;
+      position: relative;
     }
-      .Card img {
-        height: 231px;
-        width: 498px;
-        border-radius: 15px 15px 0 0;
-    }
-    .Card__text{
+    .Card img {
       height: 231px;
       width: 498px;
-      i{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        left: 400px;
-        bottom: 50px;
-        width: 22px;
-        font-size: 22px;
+      border-radius: 15px 15px 0 0;
+      .Card__text {
+        height: 231px;
+        width: 498px;
+        i {
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          left: 400px;
+          bottom: 50px;
+          width: 22px;
+          font-size: 22px;
+        }
       }
     }
     .Card__text__over {
-      display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-      left: 400px;
-      top: 60px;
       width: 80px;
+      position: absolute;
+      left: 400px;
       height: 29px;
       border-radius: 2px;
       background: var(--tertiaire-color);
     }
   }
+  .title__photo img {
+    position: relative;
+    object-fit: cover;
+    width: 1440px;
+    height: 300px;
+  }
+  .container__radius {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
   footer {
-    
-    min-width: 1440px;
-    background-color: #353535;
-    color: white;
-    .footer__function {
-      display: flex;
-      justify-items: end;
-      margin-left: 20px;
-      padding-bottom: 1%;
-    }
-    h1{
-      display: flex;
-      align-items: flex-end;
-      padding-top: 21px;
-      font-size:  18px;
-      font-family: Shrikhand;
-      font-style: normal;
-      font-weight: 400;
-      margin-top: 0;
-    }
-    p{
-      font-size: 16px;
-      padding-bottom: 7px;
-      margin: 0;
-    }
-    i{
-      margin-right: 11px;
-      width: 11px;
-      height: 13px;
+  min-width: 1440px;
+  background-color: #353535;
+  color: white;
+  .footer__function {
+    display: flex;
+    justify-items: end;
+    margin-left: 20px;
+    padding-bottom: 1%;
+  }
+  h1 {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 21px;
+    font-size: 18px;
+    font-family: Shrikhand;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  p {
+    font-size: 16px;
+    padding-bottom: 7px;
+    margin: 0;
+  }
+  i {
+    margin-right: 11px;
+    width: 11px;
+    height: 13px;
     }
   }
 }

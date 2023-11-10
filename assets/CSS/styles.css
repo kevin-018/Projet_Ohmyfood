@@ -7,15 +7,14 @@
   /* var(--tertiaire-color) */
 }
 
-.container {
+.container__function {
   max-width: 375px;
-  padding-left: 17px;
-  margin-left: auto;
+  background-color: white;
+  margin-left: 17px;
   margin-right: auto;
   font-style: normal;
   font-family: Roboto;
   line-height: normal;
-  background-color: whitesmoke;
 }
 
 /* body */
@@ -24,7 +23,6 @@ body {
 }
 
 header {
-  height: 30px;
   font-family: Roboto;
   size: 30px;
 }
@@ -55,8 +53,7 @@ header .header__location i {
 }
 
 .title__color {
-  margin-top: 0;
-  background-color: whitesmoke;
+  background-color: #f6f6f6;
 }
 .title__color h2 {
   display: flex;
@@ -66,7 +63,7 @@ header .header__location i {
   font-size: 24px;
   text-align: center;
   color: #000;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 .title__color p {
   width: 315px;
@@ -77,32 +74,31 @@ header .header__location i {
   text-align: center;
   color: gray;
 }
-
-/* fonction*/
-.function {
-  padding: 48px 0px 2px 20px;
-  margin: 0px;
-}
-
-.button__filter {
+.title__color .button__filter {
   display: flex;
   justify-content: center;
   padding-bottom: 57px;
   padding-top: 22px;
 }
-.button__filter .button {
+.title__color .button__filter .button {
   height: 50px;
   width: 218px;
 }
-.button__filter .button__gradient {
+.title__color .button__filter .button__gradient {
   border-width: 0;
   background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.button__filter a {
+.title__color .button__filter a {
   color: white;
   font-size: 16px;
   text-decoration: none;
+}
+
+/* fonction*/
+.function {
+  padding: 48px 0px 2px 20px;
+  margin: 0px;
 }
 
 .button__rond {
@@ -156,9 +152,10 @@ header .header__location i {
 
 /* Card */
 .Card__Restaurants {
-  padding: 0 18px 0 17px;
+  padding: 0 17px;
   margin: 0;
   background-color: whitesmoke;
+  position: relative;
 }
 .Card__Restaurants .Card {
   background-color: white;
@@ -189,9 +186,8 @@ header .header__location i {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   left: 250px;
-  top: 60px;
   width: 80px;
   height: 29px;
   border-radius: 2px;
@@ -279,12 +275,12 @@ footer i {
   .container {
     min-width: 1440px;
     align-items: center;
-    padding-left: 180px;
+    padding: 0;
   }
   .title__color {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: #f6f6f6;
     padding: 10px;
     gap: 30px;
     align-items: center;
@@ -303,27 +299,27 @@ footer i {
     font-weight: 300;
     color: gray;
   }
-  .filter__function {
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
+  .filter {
+    display: flex;
+  }
+  .filter .filter__function {
     margin: 24px;
     justify-content: center;
     align-items: flex-start;
-    align-self: stretch;
   }
-  .filter__function i {
+  .filter .filter__function i {
     padding-inline: 0px 35px;
   }
-  .filter__function p {
+  .filter .filter__function p {
     font-size: 16px;
     font-weight: 500;
   }
-  .filter__function .number {
+  .filter .number {
     border-radius: 90px;
     width: 24px;
     height: 24px;
   }
-  .filter__function .number__position {
+  .filter .number__position {
     display: flex;
     position: relative;
     align-items: center;
@@ -331,7 +327,7 @@ footer i {
     left: 10px;
     margin-block: auto;
   }
-  .filter__function .number__color {
+  .filter .number__color {
     background-color: var(--primary-color);
     color: white;
   }
@@ -349,18 +345,18 @@ footer i {
     height: 400px;
     background-color: white;
     border-radius: 15px;
+    position: relative;
   }
   .Card__Restaurants .Card img {
     height: 231px;
     width: 498px;
     border-radius: 15px 15px 0 0;
   }
-  .Card__Restaurants .Card__text {
+  .Card__Restaurants .Card img .Card__text {
     height: 231px;
     width: 498px;
   }
-  .Card__Restaurants .Card__text i {
-    display: flex;
+  .Card__Restaurants .Card img .Card__text i {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -370,16 +366,26 @@ footer i {
     font-size: 22px;
   }
   .Card__Restaurants .Card__text__over {
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 400px;
-    top: 60px;
     width: 80px;
+    position: absolute;
+    left: 400px;
     height: 29px;
     border-radius: 2px;
     background: var(--tertiaire-color);
+  }
+  .title__photo img {
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 1440px;
+    height: 300px;
+  }
+  .container__radius {
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
   footer {
     min-width: 1440px;
