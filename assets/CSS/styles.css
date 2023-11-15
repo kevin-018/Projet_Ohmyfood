@@ -89,7 +89,7 @@ header .header__location i {
   background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.title__color .button__filter a {
+.title__color a {
   color: white;
   font-size: 16px;
   text-decoration: none;
@@ -173,16 +173,27 @@ header .header__location i {
   padding: 0 0 12px 13px;
 }
 .Card__Restaurants .Card__text i {
+  bottom: 50px;
+}
+.Card__Restaurants .Card__text i {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   left: 293px;
-  bottom: 50px;
   width: 22px;
   font-size: 22px;
+  border-radius: 50%;
 }
-.Card__Restaurants .Card__text__over {
+.Card__Restaurants .Card__text i:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.Card__Restaurants .Card__text i:hover::before {
+  font-weight: bold;
+}
+
+.Card__text__over {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,6 +217,7 @@ header .header__location i {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
+  background-color: #f6f6f6;
 }
 .container__radius .title__restaurant {
   padding-top: 32px;
@@ -213,9 +225,34 @@ header .header__location i {
   font-family: Shrikhand;
   font-size: 28px;
 }
+.container__radius .title__restaurant i {
+  bottom: 30px;
+}
+.container__radius .title__restaurant i {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  left: 293px;
+  width: 22px;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.container__radius .title__restaurant i:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.container__radius .title__restaurant i:hover::before {
+  font-weight: bold;
+}
 .container__radius .different__menus {
   display: grid;
   grid-gap: 12px;
+}
+.container__radius .different__menus h2 {
+  border-bottom-style: solid;
+  width: 40px;
+  border-color: var(--tertiaire-color);
 }
 .container__radius .different__menus h3 {
   display: flex;
@@ -331,9 +368,6 @@ footer i {
     background-color: var(--primary-color);
     color: white;
   }
-  .function {
-    padding: 0;
-  }
   .Card__Restaurants {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
@@ -386,6 +420,9 @@ footer i {
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
+    width: 1055px;
+    height: 1221px;
   }
   footer {
     min-width: 1440px;
@@ -394,28 +431,31 @@ footer i {
   }
   footer .footer__function {
     display: flex;
-    justify-items: end;
     margin-left: 20px;
-    padding-bottom: 1%;
+    justify-content: end;
+    order: 1;
   }
-  footer h1 {
-    display: flex;
-    align-items: flex-end;
-    padding-top: 21px;
+  footer .footer__function h1 {
     font-size: 18px;
     font-family: Shrikhand;
     font-style: normal;
     font-weight: 400;
-    margin-top: 0;
+    flex-shrink: 0;
+    padding: 0;
+    margin-right: 60px;
+    order: 2;
   }
-  footer p {
-    font-size: 16px;
-    padding-bottom: 7px;
-    margin: 0;
+  footer .footer__function .footer__icons {
+    width: 170px;
   }
-  footer i {
-    margin-right: 11px;
+  footer .footer__function .footer__icons i {
+    margin-right: 15px;
     width: 11px;
     height: 13px;
+  }
+  footer .footer__function .footer__icons .footer__formulary {
+    font-size: 16px;
+    padding-bottom: 7px;
+    width: 130px;
   }
 }/*# sourceMappingURL=styles.css.map */

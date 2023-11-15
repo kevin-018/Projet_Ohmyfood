@@ -6,6 +6,43 @@
   --tertiaire-color: #99e2d0;
   /* var(--tertiaire-color) */
 }
+@mixin heart-color {
+    i {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      left: 293px;
+      width: 22px;
+      font-size: 22px;
+      border-radius: 50%;
+      &:hover{
+        color: var(--primary-color);
+        cursor: pointer;
+      &::before{
+        font-weight: bold;
+      }
+      }
+      }
+   }
+@mixin gradient-color{
+  display: flex;
+    justify-content: center;
+    padding-bottom: 57px;
+    padding-top: 22px;
+    .button {
+      height: 50px;
+      width: 218px;
+    }
+    .button__gradient {
+      border-width: 0;
+      background: linear-gradient(
+        to right bottom,
+        var(--second-color),
+        var(--primary-color));
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      }
+}
 .container__function {
   max-width: 375px;
   background-color: white;
@@ -71,29 +108,13 @@ header {
     color: gray;
   }
   .button__filter {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 57px;
-    padding-top: 22px;
-    .button {
-      height: 50px;
-      width: 218px;
-    }
-    .button__gradient {
-      border-width: 0;
-      background: linear-gradient(
-        to right bottom,
-        var(--second-color),
-        var(--primary-color)
-      );
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    }
+    @include gradient-color
+  }
     a {
       color: white;
       font-size: 16px;
       text-decoration: none;
     }
-  }
 }
 /* fonction*/
 .function {
@@ -163,19 +184,14 @@ header {
     width: 340px;
     border-radius: 15px 15px 0 0;
   }
-  .Card__text {
+  .Card__text{
     padding: 0 0 12px 13px;
-    i {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      align-items: center;
-      left: 293px;
-      bottom: 50px;
-      width: 22px;
-      font-size: 22px;
+    i{
+      bottom: 50px
     }
+    @include heart-color
   }
+}  
   .Card__text__over {
     display: flex;
     justify-content: center;
@@ -187,7 +203,6 @@ header {
     border-radius: 2px;
     background: var(--tertiaire-color);
   }
-}
 .title__photo img {
   width: 375px;
   height: 275px;
@@ -199,15 +214,26 @@ header {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
+  background-color: #f6f6f6;
   .title__restaurant {
     padding-top: 32px;
     font-weight: 400;
     font-family: Shrikhand;
     font-size: 28px;
+    i{
+      bottom: 30px;
+    }
+    @include heart-color
+
   }
   .different__menus {
     display: grid;
     grid-gap: 12px;
+    h2{
+      border-bottom-style:solid ;
+      width: 40px;
+      border-color: var(--tertiaire-color);
+    }
     h3 {
       display: flex;
       height: 21px;
@@ -321,9 +347,8 @@ footer {
       color: white;
     }
   }
-  .function {
-    padding: 0;
-  }
+  //.function {
+  //}
   .Card__Restaurants {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
@@ -375,6 +400,9 @@ footer {
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
+    width: 1055px;
+    height: 1221px;
   }
   footer {
   min-width: 1440px;
@@ -382,29 +410,32 @@ footer {
   color: white;
   .footer__function {
     display: flex;
-    justify-items: end;
     margin-left: 20px;
-    padding-bottom: 1%;
-  }
-  h1 {
-    display: flex;
-    align-items: flex-end;
-    padding-top: 21px;
-    font-size: 18px;
-    font-family: Shrikhand;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 0;
-  }
-  p {
-    font-size: 16px;
-    padding-bottom: 7px;
-    margin: 0;
-  }
-  i {
-    margin-right: 11px;
-    width: 11px;
-    height: 13px;
+    justify-content: end;
+    order: 1;
+    h1 {
+      font-size: 18px;
+      font-family: Shrikhand;
+      font-style: normal;
+      font-weight: 400;
+      flex-shrink: 0;
+      padding: 0;
+      margin-right: 60px;
+      order: 2;
     }
-  }
+    .footer__icons{
+      width: 170px;
+      i {
+        margin-right: 15px;
+        width: 11px;
+        height: 13px;
+      }
+      .footer__formulary{
+        font-size: 16px;
+        padding-bottom: 7px;
+        width: 130px;
+      }
+    }
+    }
+}
 }
