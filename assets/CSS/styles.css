@@ -7,17 +7,20 @@
   /* var(--tertiaire-color) */
 }
 
-loader__container {
+.loader__container {
   display: flex;
   align-items: center;
-  background-color: rgb(240, 133, 133);
+  background-color: gray;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   z-index: 1;
   justify-content: center;
+  animation-duration: 2s;
+  animation-name: loader__off;
+  animation-fill-mode: both;
   /*overflow:*/
 }
-loader__container span {
+.loader__container span {
   width: 30px;
   height: 30px;
   margin: 0 5px;
@@ -26,7 +29,26 @@ loader__container span {
   display: inline-block;
   animation-name: dots;
   animation-duration: 2s;
-  animation-delay: 3s;
+  animation-iteration-count: 3s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(1) translateY(10px);
+  }
+}
+@keyframes loader__off {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 20%;
+    display: none;
+  }
 }
 
 .container__function {
@@ -324,52 +346,81 @@ header .header__location i {
 .container__card .title__restaurant i:hover::before {
   font-weight: bold;
 }
-.container__card .loader__menus {
-  animation-duration: 3s;
-  animation-delay: 400ms;
+.container__card .loader__menus__1 {
+  animation-name: loaders__menus;
+  animation-duration: 4s;
+}
+@keyframes loaders__menus {
+  0% {
+    animation-direction: alternate 2s;
+    transform: translate(30px);
+  }
+  50% {
+    animation-direction: alternate-reverse 2s;
+    transform: alternate-reverse(30px);
+  }
+}
+.container__card .loader__menus__2 {
+  animation-name: loaders__menus;
+  animation-duration: 6s;
+}
+@keyframes loaders__menus {
+  0% {
+    animation-direction: alternate 2s;
+    transform: translate(30px);
+  }
+  50% {
+    animation-direction: alternate-reverse 2s;
+    transform: alternate-reverse(30px);
+  }
+}
+.container__card .loader__menus__3 {
+  animation-name: loaders__menus;
+  animation-duration: 8s;
+  @keyframes loaders__menus;
 }
 .container__card .different__menus {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.container__card .different__menus h2 {
+.container__card h2 {
   border-bottom-style: solid;
   width: 40px;
   font-size: 18px;
   margin: 40px 0 0 0;
   border-color: var(--tertiaire-color);
 }
-.container__card .different__menus h3 {
+.container__card h3 {
   display: flex;
   height: 21px;
   font-size: 18px;
   font-weight: 700;
   margin: 8px 0 2px 8px;
 }
-.container__card .different__menus h4 {
+.container__card h4 {
   display: flex;
   height: 19px;
   font-size: 15px;
   font-weight: 300;
   margin: 2px 0 0 8px;
 }
-.container__card .different__menus p {
+.container__card p {
   font-weight: 700;
 }
-.container__card .different__menus .filter__function__restaurant .button__validation {
+.container__card .filter__function__restaurant .button__validation {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 0;
 }
-.container__card .different__menus .filter__function__restaurant .button__validation .contain__plats {
+.container__card .filter__function__restaurant .button__validation .contain__plats {
   flex: auto;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container__card .different__menus .filter__function__restaurant .button__validation .contain__validation {
+.container__card .filter__function__restaurant .button__validation .contain__validation {
   display: flex;
   color: white;
   align-items: center;
@@ -383,7 +434,7 @@ header .header__location i {
   visibility: hidden;
   transition: all 2s;
 }
-.container__card .different__menus .filter__function__restaurant .button__validation:hover .contain__validation {
+.container__card .filter__function__restaurant .button__validation:hover .contain__validation {
   visibility: visible;
   width: 15%;
   transition: width 2s;

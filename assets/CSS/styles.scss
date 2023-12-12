@@ -89,14 +89,29 @@
     font-size: 14px;
   }
 }
-loader__container{
+@mixin loader__menus {
+  @keyframes loaders__menus{
+    0%{
+      animation-direction: alternate 2s;
+      transform: translate(30px);
+    }
+    50%{
+      animation-direction: alternate-reverse 2s;
+      transform: alternate-reverse(30px);
+    }
+  }
+}
+.loader__container{
   display: flex;
   align-items: center;
-  background-color: rgb(240, 133, 133);
+  background-color: gray;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   z-index: 1;
   justify-content: center;
+  animation-duration: 2s;
+  animation-name: loader__off;
+  animation-fill-mode: both;
   span{
       width: 30px;
       height: 30px;
@@ -106,7 +121,26 @@ loader__container{
       display: inline-block;
       animation-name: dots;
       animation-duration: 2s;
-      animation-delay: 3s;
+      animation-iteration-count: 3s;
+      animation-timing-function: ease-in-out;
+      @keyframes dots{
+        50%{
+          opacity: 0;
+          transform: scale(1) translateY(10px);
+        }
+      }
+    }
+        @keyframes loader__off{
+          0%{
+            opacity: 100%;
+          } 
+          50%{
+            opacity:60%
+          }
+          100%{
+            opacity: 20%;
+            display: none;
+          }
   }
     /*overflow:*/
 }
@@ -299,25 +333,36 @@ header {
       i {
         bottom: 30px;
       }
-    @include heart-color;
-  }
-  .loader__menus{
-    animation-duration: 3s;
-    animation-delay: 400ms;
-  }
-  .different__menus {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    h2 {
-      border-bottom-style: solid;
-      width: 40px;
-      font-size: 18px;
-      margin: 40px 0 0 0;
-      border-color: var(--tertiaire-color);
-    }
-    h3 {
+      @include heart-color;
+      }
+      .loader__menus__1{
+        animation-name: loaders__menus;
+        animation-duration: 4s;
+        @include loader__menus
+        }
+      .loader__menus__2{
+        animation-name: loaders__menus;
+        animation-duration: 6s;
+          @include loader__menus
+        }
+      .loader__menus__3{
+        animation-name: loaders__menus;
+        animation-duration: 8s;
+          @include loaders__menus
+        }
+      .different__menus {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+        h2 {
+          border-bottom-style: solid;
+          width: 40px;
+          font-size: 18px;
+          margin: 40px 0 0 0;
+          border-color: var(--tertiaire-color);
+        }
+        h3 {
       display: flex;
       height: 21px;
       font-size: 18px;
@@ -358,7 +403,7 @@ header {
             border-color: #99e2d0;
             font-size: 20px;
             visibility: hidden;
-            transition: all 2s;
+            transition:all 2s;
           }
           &:hover .contain__validation{
             visibility: visible;
@@ -368,7 +413,6 @@ header {
         }
       }
     }
-  }
   .page {
     padding: 0;
   }
