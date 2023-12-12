@@ -343,7 +343,7 @@ header {
   .loader__menus__3 {
     animation-name: loaders__menus;
     animation-duration: 8s;
-    @include loaders__menus;
+    @include loader__menus;
   }
   .different__menus {
     display: flex;
@@ -536,9 +536,6 @@ footer {
       }
     }
   }
-  h2 {
-    position: absolute;
-  }
   .Card__text__over {
     justify-content: center;
     align-items: center;
@@ -586,11 +583,13 @@ footer {
     margin-inline: 30px;
     flex-wrap: wrap-reverse;
     align-content: end;
-    h1 {
+    h2 {
       display: flex;
       padding-left: 40px;
       margin-right: 60px;
       order: 2;
+      margin-block: auto;
+      padding-bottom: 40px;
     }
     .footer__icons {
       display: flex;
