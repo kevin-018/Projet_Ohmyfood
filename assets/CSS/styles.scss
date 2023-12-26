@@ -107,6 +107,12 @@
   animation-duration: 2s;
   animation-name: loader__off;
   animation-fill-mode: both;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
   span {
     width: 30px;
     height: 30px;
@@ -116,7 +122,7 @@
     display: inline-block;
     animation-name: dots;
     animation-duration: 2s;
-    animation-iteration-count: 3s;
+    animation-iteration-count: 3;
     animation-timing-function: ease-in-out;
     @keyframes dots {
       50% {
@@ -154,7 +160,6 @@ body {
 }
 // header //
 header {
-  size: 30px;
   .image {
     display: flex;
     justify-content: center;
@@ -182,7 +187,11 @@ header {
   }
 }
 .title__color {
+  display: flex;
   background-color: #f6f6f6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   h2 {
     display: flex;
     margin: 0px 58px 0px 42px;
@@ -286,6 +295,7 @@ header {
     height: 200px;
     width: 340px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
   }
   .Card__text {
     padding: 0 0 12px 13px;
@@ -408,6 +418,7 @@ header {
         font-size: 20px;
         visibility: hidden;
         transition: all 2s;
+        overflow:hidden
       }
       &:hover .contain__validation {
         visibility: visible;
