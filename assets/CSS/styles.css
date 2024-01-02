@@ -69,8 +69,6 @@
 body {
   margin: auto;
   font-family: Roboto;
-  min-width: -moz-max-content;
-  min-width: max-content;
 }
 
 header .image {
