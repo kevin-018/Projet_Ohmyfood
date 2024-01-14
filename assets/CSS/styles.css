@@ -148,6 +148,7 @@ header .header__location i {
   border-width: 0;
   background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 1.2s;
 }
 .button__filter .button__gradient:hover {
   cursor: pointer;
@@ -233,6 +234,7 @@ header .header__location i {
   border-width: 0;
   background: linear-gradient(to right bottom, var(--second-color), var(--primary-color));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 1.2s;
 }
 .filter__function .button__filter .button__gradient:hover {
   cursor: pointer;
@@ -289,6 +291,7 @@ header .header__location i {
   font-size: 26px;
   color: gray;
   border-radius: 50%;
+  transition: all 2s;
 }
 .Card__Restaurants .Card__text i:hover {
   color: var(--primary-color);
@@ -352,6 +355,7 @@ header .header__location i {
   font-size: 26px;
   color: gray;
   border-radius: 50%;
+  transition: all 2s;
 }
 .container__card .title__restaurant i:hover {
   color: var(--primary-color);
@@ -410,11 +414,12 @@ header .header__location i {
   margin: 8px 0 2px 8px;
 }
 .container__card h4 {
-  display: flex;
   height: 19px;
   font-size: 15px;
   font-weight: 300;
   margin: 2px 0 0 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .container__card p {
   font-weight: 700;
@@ -443,13 +448,12 @@ header .header__location i {
   border-color: #99e2d0;
   font-size: 20px;
   visibility: hidden;
-  transition: all 2s;
-  overflow: hidden;
+  transition: all 1s;
 }
 .container__card .filter__function__restaurant .button__validation:hover .contain__validation {
   visibility: visible;
   width: 15%;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 .page {
