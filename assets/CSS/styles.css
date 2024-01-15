@@ -169,6 +169,7 @@ header .header__location i {
 .button__rond {
   border-color: transparent;
   border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button__size {
@@ -493,17 +494,16 @@ footer i {
 @media screen and (min-width: 1280px) {
   header .image {
     margin: 10px;
-    padding: 50px;
   }
   header .image i {
-    right: 500px;
+    right: 600px;
   }
   .container {
     align-items: center;
     padding: 0;
   }
   .container__function {
-    height: 250px;
+    height: 180px;
   }
   .title__color {
     display: flex;
@@ -532,7 +532,7 @@ footer i {
   }
   .filter {
     display: flex;
-    padding-top: 4%;
+    padding-top: 1%;
     justify-content: center;
   }
   .filter .filter__function {
@@ -565,7 +565,8 @@ footer i {
     color: white;
   }
   .function {
-    padding: 50px 0 0 170px;
+    justify-content: flex-start;
+    padding: 0 0 0 80px;
   }
   .Card__Restaurants .Card__grid {
     display: grid;
@@ -596,7 +597,8 @@ footer i {
     font-size: 22px;
   }
   .Card__Restaurants .Card__text h2 {
-    padding: 0 0 0 0;
+    font-size: 18px;
+    padding: 5px 0 0 0;
     margin: auto;
   }
   .container__card .different__menus {
@@ -637,9 +639,12 @@ footer i {
   .container__card .different__menus p {
     justify-items: end;
   }
+  .Card__Restaurants {
+    padding-bottom: 20px;
+  }
   footer {
     max-width: 100%;
-    min-height: 112px;
+    min-height: 147px;
     background-color: #353535;
     display: grid;
     justify-content: end;
@@ -649,7 +654,7 @@ footer i {
     display: flex;
     margin-inline: 30px;
     flex-wrap: wrap-reverse;
-    align-items: center;
+    align-items: end;
   }
   .footer__function h2 {
     display: flex;
@@ -662,7 +667,7 @@ footer i {
   }
   .footer__function .footer__icons {
     display: flex;
-    align-items: center;
+    align-items: end;
     margin: 0 50px 0 0;
   }
   .footer__function .footer__icons i {
@@ -675,5 +680,14 @@ footer i {
     align-items: center;
     font-size: 16px;
     width: 200px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .function {
+    justify-content: flex-start;
+    padding: 10px 0 0 21%;
+  }
+  header .image i {
+    right: 800px;
   }
 }/*# sourceMappingURL=styles.css.map */
